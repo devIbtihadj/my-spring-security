@@ -1,5 +1,5 @@
 # application.properties structure
-
+```
 server.port=9092
 spring.datasource.url=jdbc:mysql://localhost:3306/my-security
 spring.datasource.username=
@@ -15,3 +15,4 @@ spring.mail.username=
 spring.mail.password=
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+```
