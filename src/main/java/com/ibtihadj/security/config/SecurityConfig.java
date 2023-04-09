@@ -28,6 +28,8 @@ public class SecurityConfig{
         http
                 .csrf()
                 .disable()
+                .cors()
+                .and()
                 .authorizeHttpRequests()
                 .requestMatchers(JavaConstant.PUBLIC_URLS)
                 .permitAll()
