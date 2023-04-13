@@ -52,7 +52,7 @@ public class AuthController extends ExceptionsHandler {
             produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
     public ResponseEntity<JwtResponse> login(@RequestBody @Valid LoginRequest request)throws UserNotFoundException
     {
-        System.out.println(request+"***************************************");
+        System.out.println(request+"****************************************");
         JwtResponse response = new JwtResponse();
         String token = userService.authenticate(request);
         response.setAccess_token(token);
